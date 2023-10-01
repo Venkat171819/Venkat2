@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js "></script>
+    <style>
+        .cmmpname{
+           
+            text-wrap: wrap;
+            padding-top: 60px;
+            margin-left: 30px;
+            font-size: 30px;
+            position: relative;
+            color: white;
+        }
+        .main{display: flex;
+        }
+        .left{
+            position: fixed;
+            height: 100%;
+            width: 20vw;
+            background-color: tomato;
+            display: flex;
+            flex-direction: column;
+            align-items: last baseline;
+            gap:20px;
+            padding-top: 30px;
+            padding-left: 40px;
+            
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 25px;
+        }
+        .redbar{
+            border: 5px solid red;
+            width: 55px;
+            border-radius: 10px;
+        }
+        .right{
+           margin-left: 300px;
+        }
+        .gal1{
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .gal2{
+            display: flex;
+            margin-top: 10px;
+            gap: 10px;
+           
+        }
+        .gal3{
+            display: flex;
+            margin-top: 10px;
+            gap: 10px;
+           
+        }
+        .service{
+            font-size: 40px; 
+            color:red;
+        
+        }
+        .serpara{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+        }
+        .designer{
+            position: relative;
+            font-size: 40px; 
+            color:red;
+            padding-top: 40px;
+
+        }
+        .despara{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .firstphoto{
+            height: 400px;
+            width: 325px;
+            background-color: darkgray;
+        }
+        .secondphoto{
+            height: 400px;
+            width: 325px;
+            background-color: darkgray;
+        }
+        .thirdphoto{
+            height: 400px;
+            width: 325px;
+            background-color: darkgray;
+
+        }
+        .threephotos{
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+        }
+        .package{
+            font-size: 40px; 
+            color:red;
+
+        }
+        .despara{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .table{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:5px;
+          
+        }
+        tr{
+            border: 1px solid darkgray;
+            text-align: center;
+        }
+        td{
+        background-color: rgb(238, 233, 233);
+            
+        }
+
+        .table1{
+            background-color: rgb(238, 233, 233);
+            width: 470px;
+            height: 400px;
+        }
+        .table2{
+      
+            width: 470px;
+            height: 400px;
+
+        }
+        .Contact{
+            font-size: 40px; 
+            color:red;
+        }
+        /* .name{
+            border: 0.5px solid darkgrey;
+            height: 30px;
+            margin-bottom: 15px;
+        } */
+        .last input{
+            width:75vw;
+        }
+        .d-grid button{
+            background-color: red;
+        }
+        .end{
+            margin-top: 15px;
+            height: 120px;
+            background-color: darkgray;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        @media screen and (min-width:0px) and (max-width:425px) {
+            .left{
+                width:20%;
+                margin-left: 1px;
+            }
+            .right{
+                width:80%;
+                float: right;
+            
+            }
+
+            .mobileview{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+            }
+            .table1 .btn button{width:50px;height: 13px;}
+           .menu i{display: none;}
+            #Showcase{display: none;}
+
+            .sep{
+                text-wrap: wrap;
+            }
+            p{text-align:left;
+            align-content: normal;}
+            .threephotos{display: flex;
+            flex-direction: column;}
+            .table{ display: flex;
+            flex-direction: column; gap: 25px;}
+            input{width: 40px;}
+            .d-grid button{width: 90px;}
+
+            
+            
+        }
+        @media screen and (min-width:426px) {
+            .menu i,.mobileview{display: none;}
+
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="cmmpname mt-3" >Company Name</div>
+            <div class="menu mt-5">
+                <i class="fa fa-navicon"></i>
+                <a href="#Home">Home</a>
+                <a href="#Showcase">Showcase</a>
+                <a href="#services">Services</a>
+                <a href="#designers">Designers</a>
+                <a href="#Packages">Packages</a>
+                <a href="#Contact">Contact</a>
+            </div>
+
+
+
+        </div>
+        <div class="right mt-3">
+            <div id="Home">
+            <div><P style="font-size: 55px; font-weight: bold; padding-top: 30px;">Interior Design</P></div>
+            <div id="Showcase">
+            <div><p style="font-size: 40px; color: red;">Showcase</p></div>
+            <div class="redbar"></div>
+            <div class="gal1">
+                <img src="./interiorimages/int1.jpg" width="500px" height="400px">
+                <img src="./interiorimages/int2.jpg" width="500px" height="400px">
+            </div>
+            <div class="gal2">
+                <img src="./interiorimages/int3.jpg" width="500px" height="250px">
+                <img src="./interiorimages/int4.jpg" width="500px" height="250px">
+            </div>
+            <div class="gal3">
+                <img src="./interiorimages/int-5.jpg" width="500px" height="250px">
+                <img src="./interiorimages/int-6.jpg" width="500px" height="250px">
+                
+            </div>
+        </div>
+        </div>
+        <div class="mobileview">
+            <img src="./interiorimages/int1.jpg" width="500px" height="400px">
+            <img src="./interiorimages/int2.jpg" width="500px" height="400px">
+            <img src="./interiorimages/int3.jpg" width="500px" height="133px">
+            <img src="./interiorimages/int4.jpg" width="500px" height="133px">
+            <img src="./interiorimages/int-5.jpg" width="500px" height="135px">
+            <img src="./interiorimages/int-6.jpg" width="500px" height="133px">
+
+        </div>
+        <div id="services">
+
+            <div class="service mt-3"><p>Services</p></div>
+            <div class="redbar"></div>
+            <div class="serpara mt-3">
+                <pre class="sep"style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; ">We are a interior design service that focus on what's best for your home and what's best for you!</pre>
+                <p>
+
+                    Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
+        </div>
+        <div id="designers">
+            <div class="designer mt-3"> <p>Designers</p></div>
+            <div class="redbar"></div>
+            <div class="despara mt-3">
+                <pre c style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px;">The best team in the world.</pre>
+                <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <p style="font-weight: 700;">Our designers are thoughtfully chosen:</p>
+            <div class="threephotos">
+                <div class="firstphoto">
+                    <img src="./interiorimages/johndoe.jpg" width="310px" height="200px">
+                    <h2 style="font-size: 30px;margin-left: 15px;">John Doe</h2>
+                    <p style="text-align:justify; font-size: 20px;margin-left: 15px;">CEO & Founder</p>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; margin-left: 15px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div class="secondphoto">
+                    <img src="./interiorimages/janedoe.jpg" width="310px" height="200px">
+                    <h2 style="font-size: 30px;margin-left: 15px;">Jane Doe</h2>
+                    <p style="text-align:justify; font-size: 20px;margin-left: 15px;">Designer</p>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; margin-left: 15px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div class="thirdphoto">
+                    <img src="./interiorimages/mikeross.jpg" width="310px" height="200px">
+                    <h2 style="font-size: 30px;margin-left: 15px;">Nick Ross</h2>
+                    <p style="text-align:justify; font-size: 20px;margin-left: 15px;">Architect</p>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; margin-left: 15px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="Packages">
+
+            <div class="package mt-3"><p>Packages</p></div>
+            <div class="redbar"></div>
+            <div class="despara mt-3">
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+            </div>
+            <div class="table">
+                <div>
+                    <table class="table1">
+                        <tr style="background-color: grey; height: 80px;"><th>Basic</th></tr>
+                        <tr><td>Floorplanning</td></tr>
+                        <tr><td>10 hours support</td></tr>
+                        <tr><td>photography</td></tr>
+                        <tr><td>20% furniture discount</td></tr>
+                        <tr><td>Good deals</td></tr>
+                        <tr><td>$ 199</td></tr>
+                        <tr><td class="btn"><input type="button" value="Signup" style="background-color: white;"></td></tr>
+                    </table>
+
+
+                </div>
+                <div>
+                    <table class="table2">
+                        <tr style="background-color:red; height: 80px;"><th>Pro</th></tr>
+                        <tr><td>Floorplanning</td></tr>
+                        <tr><td>50 hours support</td></tr>
+                        <tr><td>photography</td></tr>
+                        <tr><td>50% furniture discount</td></tr>
+                        <tr><td>GREAT deals</td></tr>
+                        <tr><td>$ 249</td></tr>
+                        <tr><td class="btn"><input type="button" value="Signup"  style="background-color:red;"></td></tr>
+                    </table>
+
+
+                </div>
+
+
+            </div>
+            <div class="Contact mt-3"> <p>Contact.</p></div>
+            <div class="redbar"></div>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px;">Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+        </div>
+        <div id="Contact">
+            <div class="last">
+            <label for="Name">Name</label><br>
+            <input type="text"name="name" id="1"><br>
+            <label for="Email">Email</label><br>
+            <input type="email"name="name" id="2" pattern="[^ @]*@[^ @]*"><br>
+            <label for="Name">Message</label><br>
+            <input type="text"name="name" id="3" required>
+            </div><br>
+            <div class="d-grid">
+                <button type="button" class="btn btn-primary btn-block">Send Message</button>
+              </div>
+            </div>
+           
+              <div class="end">
+                <p style="margin-left: 850px; margin-top: 20px;">Copyrights@10k</p> 
+              </div>
+
+
+    </div>
+</body>
+</html>
