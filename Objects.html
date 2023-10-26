@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        document.write("1.Finding length of the object:" +"<br>");
+        document.write("-------------------"+"<br>");
+        const obj={
+            name:"Venkat Akula",
+            age:27,
+            favgame:"Cricket",
+            favhero:"pawanKalyan"
+        };
+       const newobj=Object.keys(obj);
+       document.write(newobj+"<br>");
+       document.write(`length of the object is `+newobj.length);
+       document.write("<hr>")
+
+       document.write("2.Finding entries of the object:" +"<br>");
+        document.write("-------------------"+"<br>");
+        const obj1={
+            name:"johncena",
+            age:55,
+            job:"wwe",
+            style:"f5",
+            medals:50
+        } 
+        const newobj1= Object.entries(obj1);
+            document.write(`Entries of  object are :
+            <br>${newobj1}`+"<br>");
+            document.write("<hr>");
+
+        document.write("3.Finding keys of the object:" +"<br>");
+        document.write("-------------------"+"<br>");
+        const obj2={
+            name:"johncena",
+            age:55,
+            job:"wwe",
+            style:"f5",
+            medals:50
+        } 
+        const newobj2= Object.keys(obj1);
+            document.write(`keys of  object are :
+            <br>${newobj2}`+"<br>");
+            document.write("<hr>");
+
+        document.write("4.Finding values of the object:" +"<br>");
+        document.write("-------------------"+"<br>");
+        const obj3={
+            name:"johncena",
+            age:55,
+            job:"wwe",
+            style:"f5",
+            medals:50
+        } 
+        const newobj3= Object.values(obj1);
+            document.write(`values of  object are :
+            <br>${newobj3}`+"<br>");
+            document.write("<hr>");
+
+        document.write("5.creating an object using constructor:" +"<br>");
+        document.write("-------------------"+"<br>");
+        const obj4={
+            name:"Elephant",
+            type:"herbivore",
+            lifespan:30,
+            livesin:"jungle"
+        };
+       for(key in obj4)
+       {
+        document.write(`${key}: ${obj4[key]}`+"<br>");
+       }
+       const obj5= new Object();
+       obj5.name="Tiger",
+       obj5.type="Carnivore",
+       obj5.lifespan=30,
+       obj5.livesin="forest";
+       for(key in obj5)
+       {
+        document.write(`${key}: ${obj5[key]}`+"<br>");
+
+       }
+       document.write("<hr>");
+
+
+       
+    document.write("6.using function for a property and using set property in object:" +"<br>");
+    document.write("-------------------"+"<br>");
+    const obj6={
+            name:"deer",
+            type:"herbivore",
+            lifespan:30,
+            livesin:"jungle",
+            food: function(){
+                return "tiny leafs";
+            },
+            set weight(avgweight)
+            {
+                this.deerweight=avgweight;
+            }
+        };
+        document.write(obj6.food());
+        obj6.weight=35;
+        document.write(obj6.deerweight);
+        document.write("<hr>");
+
+
+    document.write("7.Deleting a property in object:" +"<br>");
+    document.write("-------------------"+"<br>");
+   
+        const obj7={
+            name:"Elephant",
+            type:"herbivore",
+            lifespan:30,
+            livesin:"jungle"
+        };
+        delete obj7.type;
+        for(key in obj7)
+       {
+        document.write(`${key}: ${obj7[key]}`+"<br>");
+
+       }
+
+
+    document.write("8.returning same property from multiple objects:" +"<br>");
+    document.write("-------------------"+"<br>");
+    const obje1={
+            name:"johncena",
+            age:55,
+            job:"wwe",
+            style:"f5",
+            medals:50
+        };
+        const obje2={
+            name:"rock",
+            age:55,
+            job:"wwe",
+            style:"f5",
+            medals:50
+        };
+        const obje3={
+            name:"goldberg",
+            age:55,
+            job:"wwe",
+            style:"f5",
+            medals:50
+        };
+        const commonname="name";
+        const allobj=[obje1,obje2,obje3];
+        const output=[];
+        for(x of allobj)
+        {
+            if(x.hasOwnProperty(commonname)){
+                output.push(x[commonname]);
+            }
+        }
+        document.write(output);
+
+
+
+
+    </script>
+    
+</body>
+</html>
