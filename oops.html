@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  class BankAccount{
+//             constructor(accountNumber,balance){
+//                 this.accountNumber=accountNumber;
+//                 this.balance=balance;
+//             }
+//             getAccountNumber()
+//             {
+//                 return this.accountNumber;
+//             }
+//             getbalance()
+//             {
+//                return this.balance;
+//             }
+//             setaccountnumber(accnmbr)
+//             {
+//                 this.accountNumber=accnmbr;
+//             }
+//             setbalance(balans)
+//             {
+//                 this.balance=balans;
+//             }
+//             deposit(someamount)
+//             {
+//               this.balance +=someamount;
+//             }
+//             withdraw(someamount)
+//             {
+//               this.balance-=someamount;
+//             }
+//         }
+//         let object1=new BankAccount("kotak12",30000);
+//         object1.setbalance(20000);
+//         object1.setaccountnumber("kotak1212121212");
+//         object1.deposit(1000);
+//         object1.withdraw(5000);
+//         console.log(object1);
+
+
+        //2
+
+        // class TemperatureConverter{
+        //     constructor(celsiustemp){
+        //        this._celsius=celsiustemp;
+      
+        //        setcelsius(value) {
+        //         this._celsius = value;
+        //     }
+                
+       
+        //     getcelsius(){
+        //         return this._celsius;
+        //     }
+
+        //         converttofahrenheit()
+        //         {
+        //             return(this.celsius*9/5)+32;
+        //         }
+        //         converttokelvin()
+        //         {
+        //             return this.celsius +273.5;
+        //         }
+
+        //     } 
+        // }
+        // let tempc=new TemperatureConverter(75);
+        //      tempc.celcius(50);
+        //     console.log(tempc);
+
+
+        class TemperatureConverter {
+            constructor(tem) {
+                this._celsius = tem;
+            }
+            get celsius() {
+                return this._celsius;
+            }
+
+            set celsius(tvalue) {
+                this._celsius = tvalue;
+            }
+
+          
+
+            converttoFahrenheit() {
+                return (this.celsius * 9/5) + 32;
+            }
+
+            converttoKelvin() {
+                return this.celsius + 273.15;
+            }
+            }
+
+            let tempC = new TemperatureConverter(75);
+            //tempC.celsius = 50; 
+
+            console.log(`Celsius: ${tempC.celsius}`);
+            console.log(`Fahrenheit: ${tempC.converttoFahrenheit()}`);
+            console.log(`Kelvin: ${tempC.converttoKelvin()}`);
+            
+            //3
+            // class MathOperations{
+            //     constructor(number){
+            //         this.number=number;
+            //     }
+            //     static square(number)
+            //     {
+            //         return number*number;
+            //     }
+            // }
+            // class AdvancedMathOperations extends MathOperations{
+            //     constructor(num)
+            //     {
+            //         this.num=num;
+            //     }
+            //     static cube(number)
+            //     {
+            //         return number*number*number;
+            //     }
+            // }
+            // console.log(`square of 5 is ${MathOperations.square(5)}`);
+            // console.log(` cube of 5 is ${AdvancedMathOperations.cube(5)}`);
+
+            //4
+            class shape{
+            
+                static calculateArea()
+                {
+
+                }
+                static calculatePerimeter()
+                {
+
+                }
+            }
+            class circle extends shape{
+                constructor(r)
+                {
+                    super();
+                    this.r=r;;
+                }
+               calculateArea()
+                {
+                    return Math.PI*this.r*this.r;
+                }
+                calculatePerimeter()
+                {
+                    return 2*Math.PI*this.r;
+                }
+            }
+            class square extends shape{
+                constructor(l)
+                {
+                    super();
+                    this.l=l;
+                }
+                calculateArea()
+                {
+                    return this.l*this.l;
+                }
+                calculatePerimeter()
+                {
+                    return 4*this.l;
+                }
+            }
+            let squareobj = new square(3);
+            console.log(`Square area: ${squareobj.calculateArea()}`);
+            console.log(`Square perimeter: ${squareobj.calculatePerimeter()}`);
+
+            let circleobj=new circle(2);
+            console.log(`Circle area: ${circleobj.calculateArea()}`);
+            console.log(`Circle Perimeter : ${circleobj.calculatePerimeter()}`);
+            
+            
+
+
+    
+
+
+
+            
+    </script>
+</body>
+</html>
