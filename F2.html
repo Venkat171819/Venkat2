@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patterns</title>
+</head>
+<body>
+    <script>
+        //right angled triangle:
+               
+              var i;
+              var j;
+              var a;
+          for(i=1; i<=5;i++)
+          {
+            a="";
+
+            for(j=1;j<=i;j++)
+            {
+              a=a+"*";
+            }
+            console.log(a);
+          
+          }
+
+          function ff(){
+            var i;
+              var j;
+              var a;
+          for(i=1; i<=5;i++)
+          {
+            a="";
+
+            for(j=1;j<=i;j++)
+            {
+              a=a+"*";
+            }
+            console.log(a);
+          
+          }
+            
+
+          }
+          ff();
+
+//pattern reverse:
+          var i;
+              var j;
+              var a;
+             
+          for(i=5; i>=1;i--)
+          {
+            a="";
+
+            for(j=1;j<=i;j++)
+            {
+              a=a+"*";
+            }
+            console.log( a);
+          
+          }
+
+
+          //Printing name reverse:
+          var name="Venkat";
+          var newname="";
+          for( var i=name.length-1; i>=0; i--){
+            newname=newname+name[i];
+          }
+          console.log(newname);
+
+          // printing numbers:
+
+
+              var i;
+              var j;
+              var a;
+          for(i=1; i<=5;i++)
+          {
+            a="";
+
+            for(j=1;j<=i;j++)
+            {
+              a=a+ j;
+            }
+            console.log( a);
+          
+          }
+
+          //printing numbers in reverse order:
+          var i;
+          var j;
+          var k;
+          for(i=5; i>=1; i--){
+            k="";
+            for(j=1;j<i; j++)
+            {
+                k=k+j;
+            }
+            console.log(k);
+          }
+          // Palindrome:
+
+          var name = "madam";
+          var newone="";
+          for( var i=name.length-1; i>=0; i--)
+          {
+            newone=newone+name[i];
+            
+          }
+          if(name[i]==newone[i])
+            { console.log("yes");
+          }
+          else{
+            console.log("No");
+          }
+          console.log(newone);
+          //another palindrome:
+
+
+    var i=0,j=0;
+    var a="dad";
+    while(a[j]!==undefined){
+        j++;
+    }
+    j=j-1;
+    while(i<j){
+      if(a[i]!=a[j])
+      break;
+      i++;
+      j--;
+    }
+    if(i>=j){
+        console.log("it is palindrome");
+    }
+            else{
+        console.log("it is not a palindrome");
+            }
+
+
+
+
+
+
+            function multi(x,y){
+            var i=1;
+          do{
+            j=(x + "X" +i + "=" +(x*i) + "<br>");
+            document.write(j);
+            i++;
+          }
+          while(i<=y);
+          }
+          multi(9,5);
+
+
+
+
+          var a="sairam";
+        var b=" "
+        for(i=0;i<=a.length-1;i++){
+          b=a[i];
+           
+        }
+        document.write(a);
+        
+
+
+
+    </script>
+    
+</body>
+</html>
