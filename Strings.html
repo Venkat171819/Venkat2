@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+
+        document.write("1.Using Slice:"+"<br>")
+        document.write("========="+"<br>")
+        var string= "Who are you"
+        var string2=string.slice(2,10);
+        document.write(string + "<br>");
+        document.write(string2);
+        document.write("<hr>");
+    
+        
+        document.write("2.Using substring:"+"<br>")
+        document.write("========="+"<br>")
+        var string= "Who are you"
+        var string2=string.substring(0,10);
+        document.write(string2);
+        document.write("<hr>");
+
+        //Replace text:
+        document.write("3.Using Replace:"+"<br>")
+        document.write("========="+"<br>")
+
+        var text=" modi is prime minister of india";
+        var reptext=text.replace("modi", "N.modi")
+        document.write(reptext);
+        document.write("<hr>");
+
+        document.write("4.Using Replace using /g:"+"<br>")
+        document.write("========="+"<br>")
+        var text="modi is modi and modi will be modi and modi modi...";
+        var newtext=text.replace(/modi/g,"N.modi");
+        document.write(newtext);
+        document.write("<hr>");
+
+
+        document.write("5.Using Replace all:"+"<br>")
+        document.write("========="+"<br>")
+        var text="modi is modi and modi will be modi and modi modi...";
+        var newtext=text.replaceAll(/modi/g,"N.modi");
+        document.write(newtext);
+        document.write("<hr>");
+
+
+        document.write("6.Using uppercase:"+"<br>")
+        document.write("========="+"<br>")
+        var text= "varma";
+        var newtext=text.toUpperCase();
+        document.write(newtext);
+        document.write("<hr>");
+
+
+        document.write("7.Using Lowercase:"+"<br>")
+        document.write("========="+"<br>")
+        var text="VARMA IS MY FRIEND";
+        var newtext=text.toLowerCase();
+        document.write(newtext);
+        document.write("<hr>");
+
+        document.write("8.Using concat:"+"<br>")
+        document.write("========="+"<br>")
+        var t1="varma";
+        var t2="is dangerous";
+        document.write(t1.concat(" ",t2));
+        document.write("<hr>");
+
+
+        document.write("9.Using trim:"+"<br>")
+        document.write("========="+"<br>")
+        var t1="        Jailer       ";
+        var t2= t1.trim();
+        document.write(t2 +" " +"----here TRIM removed white spaces at the start and end");
+        document.write("<hr>");
+
+
+        document.write("10.Using split:"+"<br>")
+        document.write("========="+"<br>")
+        var text="I am an agent of ACB";
+        var newtext= text.split(" ");
+        document.write(newtext +"<br>");
+        document.write(newtext.join(" "));
+        document.write("<hr>");
+        // var text="a-b,c:d";
+        // var text1=text.split(/[-,:]/);
+        // document.write(text1);
+        
+        document.write("11.converting a word into uppercase:"+"<br>")
+        document.write("========="+"<br>")
+        var text= "hello i am VENKAT";
+        var text1=text.replace(/venkat/i, function(match) {
+            return match.toUpperCase()
+        });
+        document.write(text1);
+        document.write("<hr>");
+
+        document.write("12 .converting a word into uppercase:"+"<br>")
+        document.write("========="+"<br>")
+        var text="hello hi chalo bye";
+        var text1=text.split(" ");
+      
+        for( i=0; i< text1.length; i++)
+        {
+            if(text1[i]==="hi")
+            {
+                document.write(text1[i].toUpperCase()+" ");
+            }
+            else{
+                document.write(text1[i]+" "); 
+            }
+        }
+        document.write("<hr>");
+
+        document.write("13.Finding the string length:"+"<br>")
+        document.write("========="+"<br>");
+        var str="Rakesh Jhunjhunwaala";
+        var str1=str.length;
+        document.write(str+"<br>");
+        document.write(str1);
+        document.write("<hr>");
+
+        document.write("14.string Reverse:"+"<br>")
+        document.write("========="+"<br>");
+        var a="Rakesh";
+        var b="";
+       
+
+        for(i=a.length-1; i>=0; i--)
+        {
+            b=b+a[i];
+
+        }
+        document.write(a + "<br>");
+        document.write(b);
+        document.write("<hr>");
+
+
+        document.write("15.string to array:"+"<br>")
+        document.write("========="+"<br>");
+        var str="washingtonsundar";
+        var arr=str.split("");
+        document.write(str + "<br>");
+        document.write(arr);
+        document.write("<hr>");
+
+
+        document.write("16. Using Count:"+"<br>")
+        document.write("========="+"<br>");
+        var a="car jar star war cat mat";
+        var b="";
+        for(i=0; i<a.length; i++){
+            if(a[i]=="a")
+            {
+                b++;   
+            }  
+
+        }
+        document.write(a +"<br>");
+         document.write( "No of a's is="+b);
+         document.write("<hr>");
+
+
+         document.write("17. Converting a string to object:"+"<br>")
+        document.write("========="+"<br>");
+       var string='{"name":"Valmiki","age":"20","profession":"writing"}'
+        var string1=JSON.parse(string);
+        document.write(string1);
+        var string2=JSON.stringify(string1);//convert javascript object to json object
+        document.write(string2);
+
+        const st = '{"name":"paresh","age":34,"professional":"coder"}';
+        console.log(JSON.parse(st));
+        document.write("<hr>");
+
+        document.write("18. string search:"+"<br>")
+        document.write("========="+"<br>");
+        var text="i live in hyderabad";
+        var keyword="hyderabad";
+        document.write(text + "<br>");
+        if(text.includes(keyword))
+        {
+            document.write("yes Hyderabad is present in the given string");
+
+        }
+        else{
+            document.write("No");
+        }
+
+        document.write("<hr>");
+
+        document.write("19.display charcode:"+"<br>")
+        document.write("========="+"<br>");
+        var text= "Guntur";
+        document.write(text +"<br>");
+    
+        text2 =text.charCodeAt(5);
+        document.write( "charcode of u in guntur is:" +text2);
+        document.write("<hr>");
+
+        document.write("20.display charcode:"+"<br>")
+        document.write("========="+"<br>");
+        var text="mumbai";
+        var b="";
+        for( var i=0; i<text.length; i++)
+        {
+           b=b+ text[i] +"=" + text.charCodeAt(text[i]) +"<br>";
+          
+        }
+        document.write(text +"<br>");
+        document.write(b);
+       
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>
