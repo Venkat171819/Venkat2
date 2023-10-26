@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("Enter a number");
+        if(a%2==0){
+         var result=+a+" "+"is an Even number";
+         alert(result);
+        
+        }
+        else{
+            var result= +a+" " +"is an Odd number";
+            alert(result);
+            
+        }
+
+
+
+
+
+        var x=+prompt("Enter some Random year");
+        if(x%4==0){
+            var result=+x +"is a leap year";
+            alert(result);
+        }
+        else{
+             var result=+x +"is not  a leap year";
+             alert(result);
+
+        }
+
+        
+
+        var e=+prompt("Enter 1st number");
+        var f=+prompt("Enter 2nd number");
+        var g=+prompt("Enter 3rd number");
+
+        if(e<0||f<0||g<0){
+            alert("Negative inputs");
+
+        }
+        else if(e==f&&f==g){
+            alert("All inputs are equal")
+        }
+       else if(e>f&&e>g){
+            alert(+e +"is bigger");
+        }
+        else if(f>e&&f>g){
+            alert(+f +" "+"is bigger");
+        }
+        else{
+            alert(+g+ " "+"is bigger");
+        }  
+
+
+
+
+           var j=+prompt("Enter hours between 1 to 24");
+           if(j<=24)
+           {
+           if(j>=1&&j<=5){
+            alert("Sleep mode on");
+           }
+           else if(j>=5&& j<=11){
+            alert("Good Morning");
+           }
+           else if(j>=12&& j<=17){
+            alert("Good afternoon");
+           }
+           else if(j>=18&& j<=22){
+            alert("Good evening");
+           }
+           else{
+            alert("Good Night");
+           }
+        }
+        else{
+            alert("Input wrong");
+        }
+
+
+
+
+        var red;
+        var green;
+        var yellow;
+        var lightcolor=prompt("Enter light color");
+        switch(lightcolor){
+            case "red": alert("Stop");
+            break;
+            case "green":alert("You may go");
+            break;
+            case "yellow":alert("Go slow");
+            break;
+            default: alert("No such operation for that color");
+        }
+
+
+        var month;
+        var month=prompt("Enter Month Name");
+        switch(month){
+            case "January":alert("jan is winter season");
+            break;
+            case "December":alert("Dec is winter season");
+            break;
+            case "february":alert("feb is winter season");
+            break;
+            case "March":alert("March is summer season");
+            break;
+            case "April":alert("april is summer season");
+            break;
+            case "May":alert("May is summer season");
+            break;
+            case "June":alert("june is summer season");
+            break;
+            case "July":alert("july is Rainy season");
+            break;
+            case "August":alert("August is Rainy season");
+            break;
+            case "September":alert("september is Rainy season");
+            break;
+            case "October":alert("October is Spring season");
+            break;
+            case "November":alert("NOvember is Spring season");
+            break;
+            default:alert("Cool, Not a season")
+
+        }
+
+
+
+        var  enteredchoice=+prompt("Enter one value between 1-4");
+        switch(enteredchoice){
+            case 1: alert("option 1 is selected");
+            break;
+            case 2:alert("option 2 is selected");
+            break;
+            case 3:alert("option 3 is selected");
+            break;
+            case4: alert("option 4 is selected ");
+            break;
+            default: alert("Enter value between 1to 4 only");
+
+        }
+        var age =200;
+         if(age>=18)
+         {console.log("vote");}
+             else{
+            console.log("no");
+        }
+
+
+
+        var i =-10;
+        if(i==0){
+            console.log("zero");
+        }
+        else if(i<0){
+            console.log("negative");
+        }
+        else{
+            console.log("positive");
+        }
+
+        var type=prompt("Enter your currency like USD or Euro");
+        var ic=+prompt("Enter amount");
+        var oc;
+   
+
+        if(type==="Euro"){
+            oc=(ic*80);
+            alert(+oc);
+        }
+        else if(type==="USD"){
+            oc=(ic*100);
+            alert(+oc);
+        }
+        else{
+            alert("currency should be in Euro or USD");
+        }
+        var num=0;
+        for(var i=20;i<30;i++){
+            num++;
+            document.write("s-" +num)
+        }
+
+
+        var i;
+        for(i=0;i<=20;i++)
+        {
+            document.write(i);
+        }
+
+
+        var j=5;
+        while(j<=20){
+            
+            document.write(j);
+            j++;
+        }
+
+
+        
+        
+ 
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+     
+   
+
+    </script>
+    
+</body>
+</html>
