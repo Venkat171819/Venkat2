@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        document.write("1.check whether given input is an array or not");
+        document.write("============="+"<br>")
+        var A="Venkat";
+        var B=Array.isArray(A);
+        document.write(B+"<br>");
+        document.write("<hr>");
+        document.write("2.Using slice and splice"+"<br>");
+
+        var F=[1,2,3,4,5];
+        var a=F.slice(1,4);  
+        document.write(a+"<br>");
+
+        var k=["ball","bat","pen","wicket"];
+        var m=k.splice(1,2,"ump","Akm");
+        document.write(k);
+      document.write("<hr>")
+
+      document.write("3.ODD and EVEN numbers below 20"+"<br>");
+        document.write("============="+"<br>");
+        var x=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        var even=[];
+        var odd=[];
+        for(i=0; i<x.length; i++)
+        {
+            if(x[i]%2==0)
+            {
+                even.push(x[i]);
+            }
+            else{
+                odd.push(x[i]);
+            }
+        }
+        document.write("even numbers are:" +even +"<br>");
+        document.write("odd numbers are:" +odd);
+        document.write("<hr>");
+
+
+        document.write("4.check if an element is in array?"+"<br>");
+        document.write("============="+"<br>");  
+        const array=[1,2,3,4,5];
+        const elementtofind=2;
+        if(array.includes(elementtofind))
+        document.write(array+ "<br>")
+        {
+            document.write("yes,3 is present in the given array")
+        }
+        document.write("<hr>");
+
+
+
+        document.write("5.swaping of elements in array:"+"<br>");
+        document.write("============="+"<br>");
+        function swap(array)
+        {
+            for(i=0; i<=array.length-1; i+=2)
+            {
+                const temp=array[i];
+                array[i]=array[i+1];
+                array[i+1]=temp;
+            }
+        }
+        const newarray=[1,2,3,4,5,6,7,8]
+        swap(newarray);
+        document.write(newarray);
+        document.write("<hr>");
+
+
+        document.write("6.Getting the  specific elements of array:"+"<br>");
+        document.write("============="+"<br>");
+        const ar=[1,23,43,54,66,76,64];
+        document.write(`First element in the array is ${ar[0]}`+"<br>");
+        document.write(`last element of the array is ${ar[ar.length-1]}`+"<br>");
+        document.write(`last butone element of the array is ${ar[ar.length-2]}`+"<br>");
+        document.write("<hr>");
+        
+        
+
+        
+
+
+
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
