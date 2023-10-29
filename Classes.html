@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(`1. Converting a number into string:`+"<br>")
+        let x=25;
+        let y= x.toString();
+        document.write("given number is"+" "+x+ " "+"which is an integer" +"<br>")
+        document.write("after using .tostring() it is converted as string" +" "+typeof y);
+        document.write("<hr>");
+
+        document.write(`2.Using Exponential Method:`+"<br>");
+        let x1=10.123456;
+        let y1=x.toExponential(4);
+        document.write( "Given Number is:"+x1+"<br>");
+        document.write(" after using toExponential() the value is:"+y1);
+        document.write("<hr>");
+
+        document.write(`3.Using tofixed() Method:`+"<br>");
+        var a= 9.34567;
+        let fixedNum = a.toFixed(2);
+        document.write(fixedNum);
+        document.write("<hr>");
+
+
+        document.write(`4.Class Example:`+"<br>");
+        class StudentInfo {
+        constructor(name, std, rollno, gender) {
+        this.name = name;
+        this.std = std;
+        this.rollno = rollno;
+        this.gender = gender;
+    }
+
+    getInfo() {
+        return `Name: ${this.name}, Std: ${this.std}, Roll No: ${this.rollno}, Gender: ${this.gender}`;
+    }
+}
+
+        const info = new StudentInfo("Ram", 9, 1, "male");
+        document.write(info.getInfo() + "<br>");
+
+        const info1 = new StudentInfo("Sam", 8, 2, "male");
+        document.write(info1.getInfo() + "<br>");
+
+        const info3 = new StudentInfo("Trishna", 7, 3, "female");
+        document.write(info3.getInfo() + "<br>");
+
+        const info4 = new StudentInfo("Nayana", 6, 4, "female");
+        document.write(info4.getInfo() + "<br>");
+
+    </script>
+</body>
+</html>
